@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Mechanical Engineering Ph.D. student at University of Illinois at Urbana-Champaign (UIUC) <a href='https://www.linkedin.com/in/mikayel-aramyan-15461b170/'>Linkedin</a>
 
 profile:
   align: right
@@ -26,6 +26,34 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+I work at the intersection of multi-agent optimization, game theory, robotics, and machine learning for safety-critical autonomy. My focus is on scalable consensus algorithms with formal guarantees, ensuring heterogeneous UAVs (Unmanned Aerial Vehicles, drones),  remain robust under communication loss, uncertainty, and disturbance. By uniting rigorous theory with real-world UAV experiments, my research advances autonomy for applications like package delivery, wildfire suppression, and aerial surveillance.
+
+### DRAFT OUTLINE
+- short bio about education and prof
+- short bio about research
+- Experience
+  - Apple internship
+  - CSIE Polytech lab internship - there are project videos
+      - seminar photo
+      - drone videos
+  - CSIE full time position before starting at UIUC
+  - UVON, MCE startup, there are videos
+  - Fab lab Armenia https://www.youtube.com/watch?v=9hsHjqU4QEI 
+    - Presented at WCIT expo - find videos
+  - YSU University lab part time position  
+- Projects
+  - Autonomus system
+  - drones flying 3d modeling ML project
+  - CSIE L1 flights
+  - image classification
+
+- Education
+  - degrees
+  - Coursework
+- Teaching experience
+ - award at UIUC
+ - GEC introduction to Robotics before coming to US
+ - all courses taught at UIUC
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
