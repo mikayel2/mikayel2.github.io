@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechanical Engineering Ph.D. student at University of Illinois at Urbana-Champaign (UIUC) <a href='https://www.linkedin.com/in/mikayel-aramyan-15461b170/'>Linkedin</a>
+subtitle: Ph.D. student at University of Illinois at Urbana-Champaign (UIUC) <a href='https://www.linkedin.com/in/mikayel-aramyan-15461b170/'>Linkedin</a>
 
 profile:
   align: right
   image: IMG_4424.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,7 +24,45 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+#### About me
+Hey, I am 3rd year Ph.D. student at Mechanical Engnineering department at the <a href='https://illinois.edu/'> University of Illinois at Urbana-Champaign</a>, working with Professor <a href='https://naira-hovakimyan.mechse.illinois.edu/'> Naira Hovakimyan</a>. 
+
+#### Research Focus
 I work at the intersection of multi-agent optimization, game theory, robotics, and machine learning for safety-critical autonomy. My focus is on scalable consensus algorithms with formal guarantees, ensuring heterogeneous UAVs (Unmanned Aerial Vehicles, drones),  remain robust under communication loss, uncertainty, and disturbance. By uniting rigorous theory with real-world UAV experiments, my research advances autonomy for applications like package delivery, wildfire suppression, and aerial surveillance.
+
+I am looking for internship or co-op positions starting in Jan 2026 or May 2026.
+<!-- 
+#### Education
+
+**University of Illinois Urbana-Champaign (UIUC)**  
+*Ph.D. in Mechanical Engineering* | Expected May 2027 | GPA: 3.94/4.00  
+*Master of Science in Mechanical Engineering* | May 2025 | GPA: 3.94/4.00  
+Adviser: Prof. Naira Hovakimyan
+
+**Yerevan State University**  
+*Bachelor of Science in Physics* | June 2020 | Major GPA: 3.3/4.0 -->
+
+#### Experience
+
+**Apple** | *Controls and Simulation Intern* | May 2024 – August 2024  
+*Platform Architecture, Cupertino, CA*
+
+Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures. Combined physics-based and data-driven machine learning methods with validation in closed-loop settings.
+
+- Designed and benchmarked gray-box thermal models, linear/nonlinear ARX models, and AI methods including deep neural networks (DNNs) and physics-informed neural networks (PINNs)
+- Developed end-to-end pipeline for data collection, preprocessing, model training, validation, and deployment using Python, TensorFlow, and PyTorch
+- Achieved 80% out-of-sample accuracy in SoC temperature prediction, reducing error by 15–20% compared to baselines
+
+#### Projects
+
+**Full-Stack Autonomous Parking and Vehicle Summoning** | [GitHub Repository](https://github.com/mikayel2/autonomous-parking)
+
+Designed and delivered a vehicle summoning feature with autonomous parking and mobile app integration, fully integrated into GEMstack and vehicle hardware.
+
+- Delivered integrated summoning and autonomous-parking feature set, merged into GEMstack summoning integration branch for GEM e2 onboard stack
+- Developed mobile app command pipeline, behavior-level summoning controller, and autonomous parking routine
+- Seamlessly interfaced with GEMstack's mission and PACMOD systems using Python and ROS
+
 
 ### DRAFT OUTLINE
 - short bio about education and prof
@@ -54,9 +90,3 @@ I work at the intersection of multi-agent optimization, game theory, robotics, a
  - award at UIUC
  - GEC introduction to Robotics before coming to US
  - all courses taught at UIUC
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.

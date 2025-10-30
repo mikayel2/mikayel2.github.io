@@ -2,96 +2,123 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Mikayel Aramyan
+    - name: Email
+      value: mikayel2@illinois.edu
+    - name: Phone
+      value: +1 (447) 902-1780
+    - name: LinkedIn
+      value: <a href="https://www.linkedin.com/in/mikayel-aramyan-15461b170/">LinkedIn Profile</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Mechanical Engineering
+      institution: University of Illinois Urbana-Champaign (UIUC)
+      year: Expected May 2027
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "GPA: 3.94/4.00"
+        - "Adviser: Prof. Naira Hovakimyan"
+        - "Location: Champaign, IL"
+    - title: Master of Science in Mechanical Engineering
+      institution: University of Illinois Urbana-Champaign (UIUC)
+      year: May 2025
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 3.94/4.00"
+        - "Location: Champaign, IL"
+    - title: Bachelor of Science in Physics
+      institution: Yerevan State University
+      year: June 2020
+      description:
+        - "Major GPA: 3.3/4.0"
+        - "Location: Yerevan, Armenia"
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)
+        - C++
+    - title: Frameworks / Tools
+      items:
+        - ROS / ROS2
+        - MATLAB / Simulink
+        - CasADi, ACADOS
+        - Git, Docker, Linux
+    - title: Machine Learning
+      items:
+        - Supervised/Unsupervised Learning
+        - Reinforcement Learning
+        - Neural Networks
+        - Physics-Informed Neural Networks
+        - Time Series Analysis
+        - Optimization
+    - title: Control & Robotics
+      items:
+        - Control Theory
+        - Model Predictive Control
+        - UAV Swarm Coordination
+        - Numerical Simulation
+    - title: Hardware & Systems
+      items:
+        - Embedded Systems
+        - Microcontrollers (ARM, Arduino)
+        - Thermal Modeling
+        - SoC architectures
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Controls and Simulation Intern
+      institution: Apple, Platform Architecture
+      year: May 2024 – August 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures
+        - Designed and benchmarked gray-box thermal models, linear/nonlinear ARX models, and AI methods such as deep neural networks (DNNs) and physics-informed neural networks (PINNs)
+        - Developed an end-to-end pipeline for real-world data collection, preprocessing, model training, validation, and deployment of closed-loop simulations (Python, TensorFlow, PyTorch)
+        - Achieved reliable SoC temperature prediction with lumped-element thermal models, reaching 80% out-of-sample (OOS) accuracy and reducing error by 15–20% compared to baselines
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/mikayel2/autonomous-parking">Full-Stack Autonomous Parking and Vehicle Summoning</a>
+      year: 2024
+      description:
+        - Designed and delivered a vehicle summoning feature with autonomous parking and a mobile app, fully integrated into GEMstack and the vehicle hardware
+        - Delivered an integrated summoning and autonomous-parking feature set, merged into the GEMstack summoning integration branch, structured to run on the GEM e2 onboard stack (Python, ROS)
+        - Developed a mobile app command pipeline, a behavior-level summoning controller, and an autonomous parking routine, seamlessly interfacing with GEMstack's mission and PACMOD systems
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - "Aramyan et al., 'Game-Theoretic Coordination for Time-Critical Missions of UAV Systems', IEEE Transactions on Control of Network Systems, under review, 2025. <a href='#'>arXiv</a>, <a href='#'>demo video</a>"
+        - "Poghosyan et al., 'Distributed MPC For Cooperative Path-Following', IEEE Robotics and Automation Letters, under review, 2025"
+    - year: 2026
       items:
-        - Max Planck Medal
+        - "Aramyan et al., 'PACT: Potential Differential Game-Based Multi-Agent Coordination for Time-Critical Missions' AIAA SciTech 2026, accepted for presentation"
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Relevant Coursework
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Applied Machine Learning (regression, classification, deep learning, reinforcement learning, foundation models)
+    - Autonomous Vehicle System Engineering (GNC, systems engineering)
+    - Optimal Control Systems (dynamic programming, HJB, LQR)
+    - Theory of Probability (central limit theorem, conditional expectation, and martingale theory)
+    - Control System Theory and Design (classical, robust, adaptive, optimal)
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Multi-Agent Systems
+      items:
+        - Scalable consensus algorithms with formal guarantees
+        - Game-theoretic coordination for UAV systems
+        - Distributed optimization and control
+    - title: Safety-Critical Autonomy
+      items:
+        - Robust control under communication loss and uncertainty
+        - Real-world UAV experiments and validation
+        - Applications in package delivery, wildfire suppression, and aerial surveillance
