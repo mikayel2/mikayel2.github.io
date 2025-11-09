@@ -38,34 +38,48 @@
   contents:
     - title: Programming Languages
       items:
-        - Python (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)
+        - Python (TensorFlow, PyTorch, Scikit-learn, Keras, NumPy, Pandas)
+        - C
         - C++
+        - SQL
     - title: Frameworks / Tools
       items:
         - ROS / ROS2
         - MATLAB / Simulink
-        - CasADi, ACADOS
-        - Git, Docker, Linux
+        - Git
+        - Docker
+        - Linux
+        - CUDA
+        - CasADi
+        - ACADOS
     - title: Machine Learning
       items:
         - Supervised/Unsupervised Learning
-        - Reinforcement Learning
-        - Neural Networks
-        - Physics-Informed Neural Networks
+        - Reinforcement Learning (RL)
+        - Deep Neural Networks (DNNs)
+        - Physics-Informed Neural Networks (PINN)
         - Time Series Analysis
         - Optimization
     - title: Control & Robotics
       items:
-        - Control Theory
-        - Model Predictive Control
-        - UAV Swarm Coordination
+        - Software-in-the-loop (SIL)
         - Numerical Simulation
+        - Model Predictive Control (MPC)
+        - Path Generation
+        - SLAM
     - title: Hardware & Systems
       items:
         - Embedded Systems
-        - Microcontrollers (ARM, Arduino)
+        - Microcontroller Programming
+        - LiDAR
+        - Stereo Camera
+        - Jetson Xavier-NX
         - Thermal Modeling
         - SoC architectures
+        - 3D Modeling (Fusion360, SolidWorks)
+        - CAD
+        - CAM
+        - PCB Design (KiCAD)
 
 - title: Experience
   type: time_table
@@ -74,28 +88,48 @@
       institution: Apple, Platform Architecture
       year: May 2024 – August 2024
       description:
-        - Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures
+        - Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures, which integrate multiple computing components such as CPU, GPU, and memory onto a single chip. Combined both physics-based and data-driven machine learning methods, with validation in closed-loop settings to ensure accuracy and robustness under realistic operating conditions
         - Designed and benchmarked gray-box thermal models, linear/nonlinear ARX models, and AI methods such as deep neural networks (DNNs) and physics-informed neural networks (PINNs)
-        - Developed an end-to-end pipeline for real-world data collection, preprocessing, model training, validation, and deployment of closed-loop simulations (Python, TensorFlow, PyTorch)
-        - Achieved reliable SoC temperature prediction with lumped-element thermal models, reaching 80% out-of-sample (OOS) accuracy and reducing error by 15–20% compared to baselines
+        - Developed an end-to-end pipeline for collecting training datasets, preprocessing, model training, validation, and deployment of closed-loop simulations (Python, TensorFlow, PyTorch)
+        - Achieved reliable SoC temperature prediction with lumped-element thermal models, reaching ~80% out-of-sample (OOS) accuracy and reducing error by 15–20% compared to baselines
+    - title: Controls and Simulation Engineer
+      institution: Aerial Robotics Laboratory (NPUA)
+      year: January 2021 – July 2022
+      description:
+        - Developed and integrated flight control software for autonomous drones using C++, MATLAB/Simulink to implement and evaluate control system algorithms (PID, Geometric, L1 Adaptive)
+        - Utilized software-in-the-loop (SIL) simulation to debug, fine-tune, and validate controller performance prior to real-world flight tests
+        - Conducted real-world flight experiments to assess robustness and adaptability under challenging conditions, including added payloads and wind disturbances
 
 - title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/mikayel2/autonomous-parking">Full-Stack Autonomous Parking and Vehicle Summoning</a>
+    - title: <a href="https://github.com/krishauser/GEMstack/tree/summoning_integration">Autonomous Vehicle Summoning (Course Project)</a>
       year: 2024
       description:
-        - Designed and delivered a vehicle summoning feature with autonomous parking and a mobile app, fully integrated into GEMstack and the vehicle hardware
-        - Delivered an integrated summoning and autonomous-parking feature set, merged into the GEMstack summoning integration branch, structured to run on the GEM e2 onboard stack (Python, ROS)
-        - Developed a mobile app command pipeline, a behavior-level summoning controller, and an autonomous parking routine, seamlessly interfacing with GEMstack's mission and PACMOD systems
+        - Developed a full-stack autonomous vehicle summoning system featuring path generation, obstacle detection, self-parking and a mobile user interface, fully integrated into the ROS-based GEMstack software stack and conduct in-vehicle tests on GEMe2
+        - Implemented motion planning for collision-free path generation using RRT* and Reeds–Shepp curves for autonomous parking and summoning maneuvers
+        - Integrated real-time obstacle detection using YOLO-based perception pipeline for enhanced safety and situational awareness, utilizing onboard cameras and LiDAR
+        - Developed a mobile application enabling users to specify pick-up and drop-off locations, interfacing with the autonomous vehicle system (GEMstack)
+    - title: Autonomous UV Disinfection Robot (Startup Project)
+      year: 2021-2022
+      description:
+        - Led a team of engineers in developing an autonomous UV sterilization robot designed to disinfect environments such as hospitals, schools and offices
+        - Integrated LiDAR-based SLAM algorithm for autonomous navigation on an onboard NVIDIA Jetson Xavier NX computer
+        - Tested and validated the UV system's effectiveness through controlled laboratory experiments on E. coli bacteria, demonstrating reliable disinfection performance
+    - title: Fab Academy (Program Projects)
+      year: 2020
+      description:
+        - Six month global program by MIT's Center for Bits and Atoms focused on digital fabrication, rapid prototyping, and hands-on engineering. Learned to design, prototype, and fabricate smart devices integrating mechanical, electronic, and software components by completing weekly projects
+        - Gained experience in PCB design, microcontroller programming using C/C++, 3D modeling and printing, laser cutting and embedded system design in weekly projects
+        - Learned digital fabrication tools including Fusion 360, SolidWorks, Eagle, KiCad, Arduino, Python, and embedded C
 
 - title: Publications
   type: time_table
   contents:
     - year: 2025
       items:
-        - "Aramyan et al., 'Game-Theoretic Coordination for Time-Critical Missions of UAV Systems', IEEE Transactions on Control of Network Systems, under review, 2025. <a href='#'>arXiv</a>, <a href='#'>demo video</a>"
-        - "Poghosyan et al., 'Distributed MPC For Cooperative Path-Following', IEEE Robotics and Automation Letters, under review, 2025"
+        - "Aramyan et al., 'Game-Theoretic Coordination for Time-Critical Missions of UAV Systems', IEEE Transactions on Control of Network Systems (TCNS), under review, 2025. <a href='https://doi.org/10.48550/arXiv.2504.09022'>arXiv</a>, <a href='https://www.youtube.com/watch?v=yaI_HdUjJj4'>demo video</a>"
+        - "Poghosyan, Aramyan et al., 'Distributed MPC For Cooperative Path-Following', IEEE Robotics and Automation Letters (RA-L), under review, 2025"
     - year: 2026
       items:
         - "Aramyan et al., 'PACT: Potential Differential Game-Based Multi-Agent Coordination for Time-Critical Missions' AIAA SciTech 2026, accepted for presentation"
@@ -108,6 +142,35 @@
     - Optimal Control Systems (dynamic programming, HJB, LQR)
     - Theory of Probability (central limit theorem, conditional expectation, and martingale theory)
     - Control System Theory and Design (classical, robust, adaptive, optimal)
+    - Introduction to Signal and Image Processing (online)
+    - Algorithms and Data Structures
+    - Numerical Methods and Optimization
+    - Linear Programming and Convex Analysis
+
+- title: Peer Review Service
+  type: list
+  contents:
+    - IEEE Robotics and Automation Letters (RA-L)
+    - IEEE International Conference on Robotics and Automation (ICRA)
+    - American Control Conference (ACC)
+
+- title: Teaching
+  type: list
+  contents:
+    - GEC Academy — Introduction to Robotics
+    - ME470 — Senior Capstone Project
+    - ME547 — Robust and Adaptive Control with Aerospace Applications
+    - ME543 — Applied Control System Design
+    - ME460 — Industrial Control Systems
+    - ME340 — Dynamics of Mechanical Systems
+
+- title: Certificates
+  type: list
+  contents:
+    - Supervised Machine Learning - Regression and Classification (Coursera)
+    - Advanced Learning Algorithms (Coursera)
+    - Unsupervised Learning, Recommenders, Reinforcement Learning (Coursera)
+    - Fab Academy Program Certificate
 
 - title: Research Interests
   type: nested_list

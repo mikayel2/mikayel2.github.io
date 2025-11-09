@@ -1,0 +1,31 @@
+{% assign teaching = site.data.resume.teaching %}
+{% if teaching.size > 0 %}
+  <div class="card mt-4">
+    <div class="card-header">
+      <h4 class="card-title">
+        <i class="fa-solid fa-chalkboard-teacher" style="margin-right: 6px;"></i>
+        Teaching Experience
+      </h4>
+    </div>
+    <div class="card-body">
+      <ul class="card-text font-weight-light list-group list-group-flush">
+        {% for item in teaching %}
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 75px;">
+                <i class="fa-solid fa-graduation-cap" style="margin-top: 6px;"></i>
+              </div>
+              <div class="col-xs-10 cl-sm-10 col-md">
+                <strong>{{ item.course }}</strong>
+                <br>{{ item.institution }}
+                {% if item.role %}
+                  <br><small class="text-muted">{{ item.role }}</small>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}

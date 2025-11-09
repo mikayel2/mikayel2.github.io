@@ -6,7 +6,7 @@
     "email": "mikayel2@illinois.edu",
     "phone": "+1 (447) 902-1780",
     "url": "https://mikayel2.github.io/",
-    "summary": "I work at the intersection of multi-agent optimization, game theory, robotics, and machine learning for safety-critical autonomy. My focus is on scalable consensus algorithms with formal guarantees, ensuring heterogeneous UAVs remain robust under communication loss, uncertainty, and disturbance.",
+    "summary": "I work at the intersection of multi-agent optimization, control theory, robotics, and machine learning for safety-critical autonomy. My focus is on scalable consensus algorithms with formal guarantees, ensuring heterogeneous UAVs (Unmanned Aerial Vehicles, drones), remain robust under communication loss, uncertainty, and disturbance. By uniting rigorous theory with real-world experiments, my research advances autonomy for applications like package delivery, wildfire suppression, and aerial surveillance.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -26,15 +26,28 @@
     {
       "name": "Apple",
       "position": "Controls and Simulation Intern",
+      "department": "Platform Architecture",
       "location": "Cupertino, CA",
-      // "url": "https://apple.com",
       "startDate": "2024-05-01",
       "endDate": "2024-08-01",
-      "summary": "Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures, combining physics-based and data-driven machine learning methods with validation in closed-loop settings.",
+      "summary": "Developed scalable, high-fidelity models for predicting temperature in System-on-Chip (SoC) architectures, which integrate multiple computing components such as CPU, GPU, and memory onto a single chip. Combined both physics-based and data-driven machine learning methods, with validation in closed-loop settings to ensure accuracy and robustness under realistic operating conditions.",
       "highlights": [
         "Designed and benchmarked gray-box thermal models, linear/nonlinear ARX models, and AI methods such as deep neural networks (DNNs) and physics-informed neural networks (PINNs)",
-        "Developed an end-to-end pipeline for real-world data collection, preprocessing, model training, validation, and deployment of closed-loop simulations (Python, TensorFlow, PyTorch)",
-        "Achieved reliable SoC temperature prediction with lumped-element thermal models, reaching 80% out-of-sample (OOS) accuracy and reducing error by 15–20% compared to baselines"
+        "Developed an end-to-end pipeline for collecting training datasets, preprocessing, model training, validation, and deployment of closed-loop simulations (Python, TensorFlow, PyTorch)",
+        "Achieved reliable SoC temperature prediction with lumped-element thermal models, reaching ~80% out-of-sample (OOS) accuracy and reducing error by 15–20% compared to baselines"
+      ]
+    },
+    {
+      "name": "Aerial Robotics Laboratory (NPUA)",
+      "position": "Controls and Simulation Engineer",
+      "location": "Yerevan, Armenia",
+      "startDate": "2021-01-01",
+      "endDate": "2022-07-01",
+      "summary": "Developed and integrated flight control software for autonomous drones using C++, MATLAB/Simulink to implement and evaluate control system algorithms.",
+      "highlights": [
+        "Developed and integrated flight control software for autonomous drones using C++, MATLAB/Simulink to implement and evaluate control system algorithms (PID, Geometric, L1 Adaptive)",
+        "Utilized software-in-the-loop (SIL) simulation to debug, fine-tune, and validate controller performance prior to real-world flight tests",
+        "Conducted real-world flight experiments to assess robustness and adaptability under challenging conditions, including added payloads and wind disturbances"
       ]
     }
   ],
@@ -43,18 +56,22 @@
     {
       "institution": "University of Illinois Urbana-Champaign (UIUC)",
       "location": "Champaign, IL",
-      // "url": "https://illinois.edu/",
+       "url": "https://illinois.edu/",
       "area": "Mechanical Engineering",
       "studyType": "Ph.D.",
       "startDate": "2022-08-01",
       "endDate": "2027-05-01",
       "score": "3.94/4.00",
       "courses": [
-        "Applied Machine Learning",
-        "Autonomous Vehicle System Engineering",
-        "Optimal Control Systems",
-        "Theory of Probability",
-        "Control System Theory and Design"
+        "Applied Machine Learning (regression, classification, deep learning, reinforcement learning, foundation models)",
+        "Autonomous Vehicle System Engineering (GNC, systems engineering)",
+        "Optimal Control Systems (dynamic programming, HJB, LQR)",
+        "Theory of Probability (central limit theorem, conditional expectation, and martingale theory)",
+        "Control System Theory and Design (classical, robust, adaptive, optimal)",
+        "Introduction to Signal and Image Processing (online)",
+        "Algorithms and Data Structures",
+        "Numerical Methods and Optimization",
+        "Linear Programming and Convex Analysis"
       ]
     },
     {
@@ -81,14 +98,39 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Supervised Machine Learning: Regression and Classification",
+      "date": "2023-01-01",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/share/b91072c54f0e03c8f5b5df74679b31cd"
+    },
+    {
+      "name": "Advanced Learning Algorithms",
+      "date": "2023-01-01",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/share/81ec826afa4e870d36f9778bdf40a51f"
+    },
+    {
+      "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+      "date": "2023-01-01",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/share/d48e51f107eb9ef7f7924eae3af2eb37"
+    },
+    {
+      "name": "Fab Academy Program Certificate",
+      "date": "2020-06-01",
+      "issuer": "MIT Center for Bits and Atoms",
+      "url": ""
+    }
+  ],
   "publications": [
     {
       "name": "Game-Theoretic Coordination for Time-Critical Missions of UAV Systems",
-      "publisher": "IEEE Transactions on Control of Network Systems",
+      "publisher": "IEEE Transactions on Control of Network Systems (TCNS)",
       "releaseDate": "2025-01-01",
-      "url": "",
-      "summary": "Under review, 2025. arXiv, demo video."
+      "url": "https://doi.org/10.48550/arXiv.2504.09022",
+      "summary": "Under review, 2025. arXiv: https://doi.org/10.48550/arXiv.2504.09022, demo video: https://www.youtube.com/watch?v=yaI_HdUjJj4"
     },
     {
       "name": "PACT: Potential Differential Game-Based Multi-Agent Coordination for Time-Critical Missions",
@@ -99,7 +141,7 @@
     },
     {
       "name": "Distributed MPC For Cooperative Path-Following",
-      "publisher": "IEEE Robotics and Automation Letters",
+      "publisher": "IEEE Robotics and Automation Letters (RA-L)",
       "releaseDate": "2025-01-01",
       "url": "",
       "summary": "Under review, 2025."
@@ -111,8 +153,10 @@
       "level": "Advanced",
       "icon": "fa-solid fa-code",
       "keywords": [
-        "Python (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)",
-        "C++"
+        "Python (TensorFlow, PyTorch, Scikit-learn, Keras, NumPy, Pandas)",
+        "C",
+        "C++",
+        "SQL"
       ]
     },
     {
@@ -122,11 +166,12 @@
       "keywords": [
         "ROS / ROS2",
         "MATLAB / Simulink",
-        "CasADi",
-        "ACADOS",
         "Git",
         "Docker",
-        "Linux"
+        "Linux",
+        "CUDA",
+        "CasADi",
+        "ACADOS"
       ]
     },
     {
@@ -135,9 +180,9 @@
       "icon": "fa-solid fa-brain",
       "keywords": [
         "Supervised/Unsupervised Learning",
-        "Reinforcement Learning",
-        "Neural Networks",
-        "Physics-Informed Neural Networks",
+        "Reinforcement Learning (RL)",
+        "Deep Neural Networks (DNNs)",
+        "Physics-Informed Neural Networks (PINN)",
         "Time Series Analysis",
         "Optimization"
       ]
@@ -147,10 +192,11 @@
       "level": "Advanced",
       "icon": "fa-solid fa-robot",
       "keywords": [
-        "Control Theory",
-        "Model Predictive Control",
-        "UAV Swarm Coordination",
-        "Numerical Simulation"
+        "Software-in-the-loop (SIL)",
+        "Numerical Simulation",
+        "Model Predictive Control (MPC)",
+        "Path Generation",
+        "SLAM"
       ]
     },
     {
@@ -159,9 +205,16 @@
       "icon": "fa-solid fa-microchip",
       "keywords": [
         "Embedded Systems",
-        "Microcontrollers (ARM, Arduino)",
+        "Microcontroller Programming",
+        "LiDAR",
+        "Stereo Camera",
+        "Jetson Xavier-NX",
         "Thermal Modeling",
-        "SoC architectures"
+        "SoC architectures",
+        "3D Modeling (Fusion360, SolidWorks)",
+        "CAD",
+        "CAM",
+        "PCB Design (KiCAD)"
       ]
     }
   ],
@@ -209,18 +262,87 @@
       "reference": "Ph.D. Adviser, University of Illinois Urbana-Champaign"
     }
   ],
+  "peerReview": [
+    {
+      "name": "IEEE Robotics and Automation Letters (RA-L)",
+      "type": "Journal Reviewer"
+    },
+    {
+      "name": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "type": "Conference Reviewer"
+    },
+    {
+      "name": "American Control Conference (ACC)",
+      "type": "Conference Reviewer"
+    }
+  ],
+  "teaching": [
+    {
+      "institution": "GEC Academy",
+      "course": "Introduction to Robotics",
+      "role": "Instructor"
+    },
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "course": "ME470 - Senior Capstone Project",
+      "role": "Teaching Assistant"
+    },
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "course": "ME547 - Robust and Adaptive Control with Aerospace Applications",
+      "role": "Teaching Assistant"
+    },
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "course": "ME543 - Applied Control System Design",
+      "role": "Teaching Assistant"
+    },
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "course": "ME460 - Industrial Control Systems",
+      "role": "Teaching Assistant"
+    },
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "course": "ME340 - Dynamics of Mechanical Systems",
+      "role": "Teaching Assistant"
+    }
+  ],
   "projects": [
     {
-      "name": "Full-Stack Autonomous Parking and Vehicle Summoning",
-      "summary": "Designed and delivered a vehicle summoning feature with autonomous parking and a mobile app, fully integrated into GEMstack and the vehicle hardware.",
+      "name": "Autonomous Vehicle Summoning (Course Project)",
+      "summary": "Developed a full-stack autonomous vehicle summoning system featuring path generation, obstacle detection, self-parking and a mobile user interface, fully integrated into the ROS-based GEMstack software stack and conduct in-vehicle tests on GEMe2.",
       "highlights": [
-        "Delivered integrated summoning and autonomous-parking feature set, merged into GEMstack summoning integration branch",
-        "Developed mobile app command pipeline, behavior-level summoning controller, and autonomous parking routine",
-        "Seamlessly interfaced with GEMstack's mission and PACMOD systems using Python and ROS"
+        "Implemented motion planning for collision-free path generation using RRT* and Reeds–Shepp curves for autonomous parking and summoning maneuvers",
+        "Integrated real-time obstacle detection using YOLO-based perception pipeline for enhanced safety and situational awareness, utilizing onboard cameras and LiDAR",
+        "Developed a mobile application enabling users to specify pick-up and drop-off locations, interfacing with the autonomous vehicle system (GEMstack)"
       ],
       "startDate": "2024-01-01",
       "endDate": "2024-12-01",
-      "url": "https://github.com/mikayel2/autonomous-parking"
+      "url": "https://github.com/krishauser/GEMstack/tree/summoning_integration"
+    },
+    {
+      "name": "Autonomous UV Disinfection Robot (Startup Project)",
+      "summary": "Led a team of engineers in developing an autonomous UV sterilization robot designed to disinfect environments such as hospitals, schools and offices. Won 1st place award for 'UVON Desk' project at Fab Lab Armenia.",
+      "highlights": [
+        "Integrated LiDAR-based SLAM algorithm for autonomous navigation on an onboard NVIDIA Jetson Xavier NX computer",
+        "Tested and validated the UV system's effectiveness through controlled laboratory experiments on E. coli bacteria, demonstrating reliable disinfection performance",
+        "Conducted research on germicidal properties of UVC light emitted from HID Mercury Vapor lamps with bacteriological analysis"
+      ],
+      "startDate": "2021-01-01",
+      "endDate": "2022-06-01",
+      "url": "https://www.linkedin.com/pulse/inspection-germicidal-properties-uvc-light-emitted-from-?trk=public_post_feed-article-content"
+    },
+    {
+      "name": "Fab Academy (Program Projects)",
+      "summary": "Six month global program by MIT's Center for Bits and Atoms focused on digital fabrication, rapid prototyping, and hands-on engineering. Learned to design, prototype, and fabricate smart devices integrating mechanical, electronic, and software components by completing weekly projects.",
+      "highlights": [
+        "Gained experience in PCB design, microcontroller programming using C/C++, 3D modeling and printing, laser cutting and embedded system design in weekly projects",
+        "Learned digital fabrication tools including Fusion 360, SolidWorks, Eagle, KiCad, Arduino, Python, and embedded C"
+      ],
+      "startDate": "2020-01-01",
+      "endDate": "2020-06-01",
+      "url": "https://fablabarmenia.com/curious-talk/preparing-the-new-generation-of-innovators-to-address-the-emerging-digital-fabrication-economy/"
     }
   ]
 }

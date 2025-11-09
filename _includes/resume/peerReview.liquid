@@ -1,0 +1,30 @@
+{% assign peerReview = site.data.resume.peerReview %}
+{% if peerReview.size > 0 %}
+  <div class="card mt-4">
+    <div class="card-header">
+      <h4 class="card-title">
+        <i class="fa-solid fa-user-check" style="margin-right: 6px;"></i>
+        Peer Review Service
+      </h4>
+    </div>
+    <div class="card-body">
+      <ul class="card-text font-weight-light list-group list-group-flush">
+        {% for item in peerReview %}
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 75px;">
+                <i class="fa-solid fa-journal-whills" style="margin-top: 6px;"></i>
+              </div>
+              <div class="col-xs-10 cl-sm-10 col-md">
+                {{ item.name }}
+                {% if item.type %}
+                  <br><small class="text-muted">{{ item.type }}</small>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}
